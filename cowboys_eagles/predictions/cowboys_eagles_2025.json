@@ -1,0 +1,7 @@
+{
+  "Cowboys_Win_Prob": 24.2,
+  "Eagles_Win_Prob": 75.8,
+  "method": "avg_of_last_12_game_probs",
+  "snapshot_games": 12,
+  "seasons_used_for_snapshot": "2022-2024"
+}

@@ -1,1 +1,5 @@
 # NFL-Prediction---Eagles-vs-Cowboys
+
+This project is my first attempt at building an NFL game prediction model, focused on the season opener between the Cowboys and Eagles. Using open play-by-play data from 2022–2024, I engineered rolling features (3, 8, and 12-game windows) that capture team form across seasons and trained a LightGBM model with isotonic calibration to produce well-calibrated probabilities. Instead of relying on a single synthetic row, the model evaluates each team’s last N real games (default 12) and averages their win probabilities for a stable, realistic split.
+
+On top of the model, I built a Streamlit app that generates a sleek, downloadable matchup card. The UI shows each team’s predicted win percentage, dynamically colors the probability bars, allows users to set the kickoff time, and supports custom team logos. This project was a way to step out of my comfort zone, explore NFL analytics, and put together an end-to-end pipeline covering data prep → modeling → visualization in just a few days.
